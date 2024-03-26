@@ -1,0 +1,49 @@
+       *{
+        margin: 0;
+        padding: 0;
+       } body{
+            width: 100%;
+            background-color: rgb(223, 207, 217);
+            font-family: "Workbench", sans-serif;
+            height: 2000px;
+        }
+        h2{
+            background-color: darkseagreen;
+            color: blue;
+        }
+        .main-content{
+            width: 70%;
+            float: left;
+            padding: 10px;
+            
+        }
+        .elif{
+            color: rgb(134, 110, 229);
+        }
+        .yellow{
+            float: left;
+        }
+        h1{
+            font-size: 50px;
+            border: 50px solid rgb(180, 227, 233);
+            
+
+        }
+       .ii{
+        width: 10%;
+       }
+.links{
+    border: 5px solid rgb(111, 8, 213);
+    display: flex;
+    justify-content: flex-end;
+}
+.login{
+    margin-left: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.sabit{
+    position: fixed;
+}
