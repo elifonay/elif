@@ -16,7 +16,7 @@
       }
 
       h2, h3{
-        color: deeppink;
+        color: rgb(255, 0, 76);
         display: flex;
         flex-wrap: wrap;
         }
