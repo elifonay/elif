@@ -3,72 +3,72 @@
     padding: 0;
 
     } 
+
     body{
         width: 100vw;
-        background-color: rgb(241, 255, 241);
-        font-family: "Indie Flower", cursive;
+        background-color: rgb(254, 250, 246);
+        font-family: "Source Serif 4", serif;
         width: 100dwv;
-       overflow-x: hidden;
+        overflow-x: hidden;
  
       }
-
 
       body::-webkit-scrollbar {
         width: 8px;               /* width of the entire scrollbar */
       }
       
       body::-webkit-scrollbar-track {
-        background: orange;        /* color of the tracking area */
+        background: rgb(234, 219, 200);        /* color of the tracking area */
       }
       
       body::-webkit-scrollbar-thumb {
-        background-color: blue;    /* color of the scroll thumb */
+        background-color:rgb(218, 192, 163);    /* color of the scroll thumb */
         border-radius: 0px;       /* roundness of the scroll thumb */
-        border: 0px solid orange;  /* creates padding around scroll thumb */
+        border: 0px solid rgb(234, 219, 200);  /* creates padding around scroll thumb */
       }
 
       h1{
-        color:rgb(106, 0, 0) ;
-        background-color: rgb(196, 240, 197);
-        font-size: 50px;
-        text-align: center;
+        color:rgb(218, 192, 163);
+        font-size: 60px;
+        position: fixed;
+        padding-left: 3.5%;
+        padding-top: 1%;
+        
       }
 
-      h2, h3{
-        color:rgb(147, 86, 86) ;
-        display: flex;
-        flex-wrap: wrap;
-        }
+    
 
-        h2{
-            font-size: 25px;
-            padding-top: 3%;
+        .about{
+           font-size:25px ;
+           padding-right:3.5%;
+           padding-top: 2%;
         }
-
-        h3{
-            font-size: 20px;
-        }  
 
         .flex-container{
-          background-color:rgb(196, 240, 197) ;
+         
           display: flex;
           flex-direction: row;
           justify-content:space-between;
           align-items:center;
           height: 100wh;
+          padding-top: 15%;
           
       }
       .flex-item{
           flex: 0 1 auto;
           align-self: center;
           order: 2;
-          color:rgb(147, 86, 86) ;
+          color:rgb(218, 192, 163) ;
+          font-size: 25px;
+         
       }
 
       .photo-grid-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        color: rgb(218, 192, 163);
+
     }
     .photo-grid {
         display: flex;
@@ -81,10 +81,11 @@
 .photo-grid-item {
     display: flex;
   width: 33.333%;
+  object-position: top;
+  object-fit: scale-down;
+
   
 }
-
-
 
 .photo-grid-item img{
     max-width: 100%;
@@ -93,100 +94,73 @@
 .header{
     display: flex;
     justify-content: space-between;
+
 }
 
 .header-container{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    background-color:rgb(196, 240, 197);
-}
-
-.name{
-    padding-left: 10%;
-}
-
-.menu{
-    padding-right: 10%;
-    padding-top: 2.5%;
-    font-size: 140%;
-    color: darkcyan;
+    padding-top: 1%;
+    padding-bottom: 5%;
+   
 }
 
 a{
-    text-decoration: none;
+    color:rgb(218, 192, 163);
+    text-decoration-line: none
 }
 a:hover{
-    background-color:rgb(155, 191, 171) ;
-}
-
-.b {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.g {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.a {
-width: 33.333%;
-
-}
-
-.a img{
-max-width: 100%;
-}
-
-.c {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.d {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.f {
-width: 30%;
-
-}
-
-.f img{
-max-width: 100%;
-}
-
-.e {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.r {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.p {
-width: 30%;
-padding-top: 2%;
-}
-
-.p img{
-max-width: 100%;
+  color:rgb(234, 219, 200);
 }
 
 .inline{
     display: inline;
+    font-size: 22px;
+    padding-bottom: 3%;
+    padding-top: 5%;
   }
 
-  .basicdesign{
+  .menu{
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    padding-right: 4%;
+    padding-top: 1.5%;
+  }
+
+  h2, h3{
+    color: rgb(16, 44, 87);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
+   
+    }
 
-  
+    h2{
+        font-size: 30px;
+        padding-bottom: 2%;
+        padding-top: 1%;
+     
+      
+    }
+
+    h3{
+        font-size: 25px;
+        padding-bottom: 10%;
+     
+      
+    }  
+
+    .container{
+        padding-left: 15%;
+        padding-right: 20%;
+        padding-top: 10%;
+    }
+
+    h4{
+        font-size: 35px;
+        color: rgb(16, 44, 87);
+    }
+
+    h5{
+        font-size: 33px;
+        color: rgb(16, 44, 87);
+
+    }
