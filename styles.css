@@ -51,7 +51,9 @@
           justify-content:space-between;
           align-items:center;
           height: 100wh;
-          padding-top: 15%;
+          padding-top: 10%;
+          padding-left: 8%;
+          padding-right: 8%;
           
       }
       .flex-item{
@@ -143,7 +145,7 @@ a:hover{
 
     h3{
         font-size: 25px;
-        padding-bottom: 10%;
+        padding-bottom: 11%;
      
       
     }  
