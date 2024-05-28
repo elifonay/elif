@@ -54,3 +54,15 @@ if (age >= 18) {
 } else {
     console.log("You are a minor.")
 }
+
+let jj = document.getElementById('elif');
+
+jj.addEventListener('click', function(event) {
+    console.log('Button clicked!', event);
+});
+
+function countRabbits() {
+    for(let i=1; i<=3; i++){
+        alert("Rabbit number " + i);
+    }
+    }

@@ -40,8 +40,11 @@
 
         .about{
            font-size:25px ;
-           padding-right:3.5%;
-           padding-top: 2%;
+         
+           position: fixed;
+           right: 3.5%;
+           top:2% ;
+        
         }
 
         .flex-container{
