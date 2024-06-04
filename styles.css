@@ -92,7 +92,29 @@
   object-position: top;
   object-fit: scale-down;
 
+
   
+}
+
+.photo-grid-item1 {
+  display: flex;
+width: 33.333%;
+object-position: top;
+object-fit: scale-down;
+overflow: hidden;
+aspect-ratio: 1;
+
+
+}
+
+.photo-grid-item1 img:hover{
+  transform:translate(0, -50%);
+
+}
+
+
+.photo-grid-item1 img{
+  max-width: 100%;
 }
 
 .photo-grid-item img{
@@ -174,3 +196,19 @@ a:hover{
         color: rgb(16, 44, 87);
       
     }
+
+
+
+.circle {
+  border: 2px solid rgb(255, 130, 130);
+  border-radius: 50%;
+ /* box-shadow: 0 0 10px rgb(255, 0, 0);*/
+  pointer-events: none;
+  position: fixed;
+  top: -10rem;
+  left: -10rem;
+  height: 2rem;
+  width: 2rem;
+  transition: transform 0.4s, background 0.4s;
+}
+
