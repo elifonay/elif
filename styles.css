@@ -36,7 +36,9 @@
         
       }
 
-    
+    #k {
+      color: rgb(16, 44, 87);
+    }
 
         .about{
            font-size:25px ;
@@ -73,6 +75,7 @@
         justify-content: center;
         flex-wrap: wrap;
         color: rgb(218, 192, 163);
+       padding-top: 10%;
 
     }
     .photo-grid {
@@ -157,7 +160,7 @@ a:hover{
         padding-left: 15%;
         padding-right: 20%;
         padding-top: 10%;
-        padding-bottom: 5%;
+        
     }
 
     h4{
