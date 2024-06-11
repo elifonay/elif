@@ -1,76 +1,9 @@
-let fruits = ["Apple", "Banana", "Orange", "Mango"];
-console.log(fruits[0]);
-fruits.push("Grapes");
-console.log(fruits);
-console.log(fruits[2]);
-fruits.pop();
-
-let person = {
-    firstName:"John",
-    lastName: "Doe",
-    age:30,
-    hobbies:["Reading", "Travelling"],
-    address:{
-        street:"123 Main St",
-        city: "Anytown",
-        country:"USA"
-    }
-};
-
-console.log(person.firstName);
-console.log(person.address.city);
-
-person.age = 31;
-person.hobbies.push("Cooking");
-
-console.log(person.hobbies);
-
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
 
 
-for (let i = fruits.length; i >= 0; i--){
-    console.log(fruits[i]);
-}
 
 
-let x = 8;
-if (x>5) {
-   let h = "hello"
-    console.log(h)
-} else {
-    console.log("bye")
-}
 
-let age = 19
-
-if (age >= 18) {
-    if (age < 21) {
-        console.log("You are an adult but not yet allowed to drink.");
-    } else {
-        console.log("You are an adult and allowed to drink.");
-    }
-} else {
-    console.log("You are a minor.")
-}
-
-let jj = document.getElementById('elif');
-
-jj.addEventListener('click', function(event) {
-    console.log('Button clicked!', event);
-});
-
-function countRabbits() {
-    for(let i=1; i<=3; i++){
-        alert("Rabbit number " + i);
-    }
-    }
-
-
-    const menu = document.getElementById('menu');
-
-    const circle = document.getElementById('circle');
+    const circle = document.getElementById('circle1');
     
 
 
@@ -84,3 +17,55 @@ document.addEventListener('mousemove', (e) => {
     circle.style.top=` ${e.pageY - height/2}px`;
 
  });
+
+
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+
+
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }

@@ -17,8 +17,12 @@
     <div class="header-container">
         <div class="header">
              <div class="name"> <a href="index.html"><h1>elif</h1></a></div>
-             <div class="menu">
-             <div class="about"><a href="about.html">about</a></div>  
+             <div class="flex padding-about">
+             <div class="about"><a href="about.html">about</a>  
+                <label  class="switch">
+                <input type="checkbox">
+                <span onclick="myFunction()" class="slider round"></span>
+              </label></div> 
             </div>
         </div>
     </div>
@@ -48,11 +52,27 @@
         <div class="flex-item"><a href="https://www.instagram.com/elyf_ny/">@elyf_ny</a></div>
     </div> 
 
-    <button id='elif'>ghkghknjl</button>
-
-    <input type="button" onclick="countRabbits()" value="Count Rabbits!">
+  
     
 <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 
 </body>

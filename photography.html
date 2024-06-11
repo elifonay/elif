@@ -10,7 +10,7 @@
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
-
+    <div id="circle1" class="circle"></div>
     <div class="header-container">
         <div class="header">
              <div class="name"> <a href="index.html"><h1>elif</h1></a></div>
@@ -20,43 +20,133 @@
         </div>
     </div>
 
-    <div class="photo-grid-container">
-        <div class="inline">please see <a href="">@whereisseff</a> for more</div>
-        <div class="photo-grid">
-        <div class="photo-grid-item">
-            <img src="Portfolio/a.jpg" alt="">
+
+
+    <div class="row">
+        <div class="column">
+          <img style="max-width: 100%;" src="Portfolio/a.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/b.jpg" alt="">
+        <div class="column">
+          <img style="max-width: 100%;" src="Portfolio/b.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
         </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/c.jpg" alt="">
-        </div> 
-        <div class="photo-grid-item">
-            <img src="Portfolio/d.jpg" alt="">
+        <div class="column">
+          <img style="max-width: 100%;" src="Portfolio/c.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
         </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/e.jpg" alt="">
+        <div class="column">
+          <img style="max-width: 100%;" src="Portfolio/d.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
         </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/f.jpg" alt="">
+        <div class="column">
+            <img style="max-width: 100%;" src="Portfolio/e.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img style="max-width: 100%;" src="Portfolio/f.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img style="max-width: 100%;" src="Portfolio/g.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img style="max-width: 100%;" src="Portfolio/h.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img style="max-width: 100%;" src="Portfolio/ı.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+      </div>
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">1 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/a.jpg" style="width:100%">
+            </div>
+          </div>
+      
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">2 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/b.jpg" style="width:100%">
+            </div>
+          </div>
+      
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">3 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/c.jpg" style="width:100%">
+            </div>
+          </div>
+      
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">4 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/d.jpg" style="width:100%">
+            </div>
+          </div>
+
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">5 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/e.jpg" style="width:100%">
+            </div>
+          </div>
+
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">6 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/f.jpg" style="width:100%">
+            </div>
+          </div>
+
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">7 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/g.jpg" style="width:100%">
+            </div>
+          </div>
+
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">8 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/h.jpg" style="width:100%">
+            </div>
+          </div>
+
+          <div class="mySlides modal-cont">
+            <div class="flexmodal">
+                <div class="numbertext">9 / 9</div>
+                <img style="max-height: 100%;" src="Portfolio/ı.jpg" style="width:100%">
+            </div>
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          
         </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/g.jpg" alt="">
-        </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/h.jpg" alt="">
-        </div>
-        <div class="photo-grid-item">
-            <img src="Portfolio/ı.jpg" alt="">
-        </div>
-    </div>
- </div>  
+
+
+
+
+
+
+
+
+
+
+
+
 
  <div class="flex-container">
     <div class="flex-item">created by elif</div>
     <div class="flex-item"><a href="mailto:eliffonaay@gmail.com">eliffonaay@gmail.com</a></div>
     <div class="flex-item"><a href="https://www.instagram.com/elyf_ny/">@elyf_ny</a></div>
 </div> 
+<button id='elif'>ghkghknjl</button>
+
+    <input type="button" onclick="countRabbits()" value="Count Rabbits!">
+<script src="script.js"></script>
 </body>
 </html>
